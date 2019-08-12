@@ -82,7 +82,8 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
                 }
             }
             if (setVout)
-                options.add("--vout=android_display,none");
+                options.add("--vout=android_display,none")
+                options.add("--rtsp-tcp");
         }
 
         nativeNew(options.toArray(new String[options.size()]), context.getDir("vlc", Context.MODE_PRIVATE).getAbsolutePath());
