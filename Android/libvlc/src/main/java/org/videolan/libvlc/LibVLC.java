@@ -82,7 +82,7 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
                 }
             }
             if (setVout)
-                options.add("--vout=android_display,none")
+                options.add("--vout=android_display,none");
                 options.add("--rtsp-tcp");
         }
 
