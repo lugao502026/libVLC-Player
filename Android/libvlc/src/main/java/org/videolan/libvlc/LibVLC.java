@@ -46,6 +46,7 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
 
         if (options == null)
             options = new ArrayList<String>();
+            options.add("--rtsp-tcp");
         boolean setAout = true, setChroma = true;
         // check if aout/vout options are already set
         for (String option : options) {
