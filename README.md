@@ -14,6 +14,6 @@ Compile only VLC (version 2.5.14)
         }
     }
     dependencies {
-        compile 'com.github.lugao502026:libVLC-Player:1.0'
+        compile 'com.github.lugao502026:libVLC-Player:master'
     }
 ```
