@@ -47,7 +47,7 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
         if (options == null)
             options = new ArrayList<String>();
             options.add("--rtsp-tcp");
-            options.add("--transform-type=90");
+            options.add("--transform-type=180");
             //options.add("--video-filter=transform");
         boolean setAout = true, setChroma = true;
         // check if aout/vout options are already set
