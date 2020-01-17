@@ -47,8 +47,8 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
         if (options == null)
             options = new ArrayList<String>();
             options.add("--rtsp-tcp");
-            options.add("--transform-type=90");
-            //options.add("--video-filter=transform");
+            //options.add("--transform-type=90");
+            options.add("--video-filter=transform");
         boolean setAout = true, setChroma = true;
         // check if aout/vout options are already set
         for (String option : options) {
@@ -86,9 +86,9 @@ public class LibVLC extends VLCObject<LibVLC.Event> {
             }
             if (setVout)
                 options.add("--vout=android_display,none");
-                options.add("--transform-type=90");
-                //options.add("--rtsp-tcp");
-                //options.add("--transform-type=transpose");
+                //options.add("--transform-type=90");
+                options.add("--rtsp-tcp");
+                options.add("--transform-type=transpose");
                 //options.add("--video-filter=transform");
         }
 
